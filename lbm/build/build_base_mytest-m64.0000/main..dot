@@ -1,0 +1,29 @@
+digraph "PDG for 'main.'" {
+	label="PDG for 'main.'";
+
+	Node0xa725790 [shape=record,label="{\<kind:root\>\nroot\n}"];
+	Node0xa725790 -> Node0xa725720[label="[rooted]"];
+	Node0xa725790 -> Node0xa72ee90[label="[rooted]"];
+	Node0xa725790 -> Node0xa72f520[label="[rooted]"];
+	Node0xa725790 -> Node0xa72f670[label="[rooted]"];
+	Node0xa725790 -> Node0xa725290[label="[rooted]"];
+	Node0xa725290 [shape=record,label="{\<kind:pi-block\>\n--- start of nodes in pi-block ---\n\<kind:single-instruction\>\n(from BB:)\n  %32 = phi i32 [ %46, %45 ], [ 1, %30 ]\n\n\<kind:single-instruction\>\n(from BB:)\n  %46 = add nuw i32 %32, 1, !dbg !59\n--- end of nodes in pi-block ---\n}"];
+	Node0xa725290 -> Node0xa72a100[label="[def-use]"];
+	Node0xa725290 -> Node0xa72a300[label="[def-use]"];
+	Node0xa725290 -> Node0xa730970[label="[def-use]"];
+	Node0xa730970 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %47 = icmp eq i32 %32, %10, !dbg !38\n  br i1 %47, label %63, label %31, !dbg !39, !llvm.loop !60\n}"];
+	Node0xa72a100 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %39 = and i32 %32, 63, !dbg !51\n  %40 = icmp eq i32 %39, 0, !dbg !52\n  br i1 %40, label %41, label %45, !dbg !53\n}"];
+	Node0xa72a100 -> Node0xa730890[label="[control]",color="blue"];
+	Node0xa72a100 -> Node0xa730740[label="[control]",color="blue"];
+	Node0xa72a100 -> Node0xa72a300[label="[control]",color="blue"];
+	Node0xa72a300 [shape=record,label="{\<kind:single-instruction\>\n(from BB:)\n  %42 = call i32 (i8*, ...) @printf(i8* nonnull dereferenceable(1) getelementptr inbounds ([14 x i8], [14 x i8]* @.str, i64 0, i64 0), i32 %32), !dbg !54\n}"];
+	Node0xa730740 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %43 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !55, !tbaa !42\n  %44 = getelementptr inbounds [26000000 x double], [26000000 x double]* %43, i64 0, i64 0, !dbg !56\n  call void @LBM_showGridStatistics(double* %44) #9, !dbg !57\n}"];
+	Node0xa730890 [shape=record,label="{\<kind:single-instruction\>\n(from BB:)\n  br label %45, !dbg !58\n}"];
+	Node0xa72f670 [shape=record,label="{\<kind:single-instruction\>\n(from BB:)\n  call void @LBM_swapGrids([26000000 x double]** nonnull @srcGrid, [26000000 x double]** nonnull @dstGrid) #9, !dbg !50\n}"];
+	Node0xa72f520 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %37 = load [26000000 x double]*, [26000000 x double]** @dstGrid, align 8, !dbg !47, !tbaa !42\n  %38 = getelementptr inbounds [26000000 x double], [26000000 x double]* %37, i64 0, i64 0, !dbg !48\n}"];
+	Node0xa72f520 -> Node0xa72f600[label="[def-use]"];
+	Node0xa72ee90 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %35 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !45, !tbaa !42\n  %36 = getelementptr inbounds [26000000 x double], [26000000 x double]* %35, i64 0, i64 0, !dbg !46\n}"];
+	Node0xa72ee90 -> Node0xa72f600[label="[def-use]"];
+	Node0xa72f600 [shape=record,label="{\<kind:single-instruction\>\n(from BB:)\n  call void @LBM_performStreamCollideTRT(double* %36, double* %38) #9, !dbg !49\n}"];
+	Node0xa725720 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %33 = load [26000000 x double]*, [26000000 x double]** @srcGrid, align 8, !dbg !41, !tbaa !42\n  %34 = getelementptr inbounds [26000000 x double], [26000000 x double]* %33, i64 0, i64 0, !dbg !43\n  call void @LBM_handleInOutFlow(double* %34) #9, !dbg !44\n}"];
+}

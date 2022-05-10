@@ -1,0 +1,16 @@
+digraph "PDG for 'LBM_initializeSpecialCellsForChannel.'" {
+	label="PDG for 'LBM_initializeSpecialCellsForChannel.'";
+
+	Node0x9ef9ec0 [shape=record,label="{\<kind:root\>\nroot\n}"];
+	Node0x9ef9ec0 -> Node0x9efa4e0[label="[rooted]"];
+	Node0x9efa4e0 [shape=record,label="{\<kind:pi-block\>\n--- start of nodes in pi-block ---\n\<kind:single-instruction\>\n(from BB:)\n  %13 = phi i64 [ %21, %12 ], [ 0, %11 ]\n\n\<kind:single-instruction\>\n(from BB:)\n  %21 = add nuw nsw i64 %13, 1, !dbg !16\n--- end of nodes in pi-block ---\n}"];
+	Node0x9efa4e0 -> Node0x9d771e0[label="[def-use]"];
+	Node0x9efa4e0 -> Node0x9efc5b0[label="[def-use]"];
+	Node0x9efc5b0 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %22 = icmp eq i64 %21, 100, !dbg !17\n  br i1 %22, label %38, label %12, !dbg !10, !llvm.loop !18\n}"];
+	Node0x9d771e0 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %14 = add nsw i64 %8, %13, !dbg !11\n  %15 = mul nsw i64 %14, 20, !dbg !11\n  %16 = add nsw i64 %15, 19, !dbg !11\n  %17 = getelementptr inbounds double, double* %0, i64 %16, !dbg !11\n  %18 = bitcast double* %17 to i32*, !dbg !11\n}"];
+	Node0x9d771e0 -> Node0xa0520b0[label="[def-use]"];
+	Node0x9d771e0 -> Node0x9ef9e50[label="[def-use]"];
+	Node0x9ef9e50 [shape=record,label="{\<kind:multi-instruction\>\n(from BB:)\n  %19 = load i32, i32* %18, align 4, !dbg !11, !tbaa !12\n  %20 = or i32 %19, 1, !dbg !11\n}"];
+	Node0x9ef9e50 -> Node0xa0520b0[label="[def-use]"];
+	Node0xa0520b0 [shape=record,label="{\<kind:single-instruction\>\n(from BB:)\n  store i32 %20, i32* %18, align 4, !dbg !11, !tbaa !12\n}"];
+}

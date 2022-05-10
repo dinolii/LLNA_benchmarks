@@ -1,0 +1,3 @@
+/home/labuser/ssd/Code-Backup/llvm-project/build/bin//clang -c -o lbm.o -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP        -fprofile-generate=pgo_prof.dir             lbm.c
+/home/labuser/ssd/Code-Backup/llvm-project/build/bin//clang -c -o main.o -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP        -fprofile-generate=pgo_prof.dir             main.c
+/home/labuser/ssd/Code-Backup/llvm-project/build/bin//clang         -fprofile-generate=pgo_prof.dir        lbm.o main.o             -lm         -o lbm_r  

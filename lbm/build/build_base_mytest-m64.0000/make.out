@@ -1,0 +1,186 @@
+/home/labuser/ssd/Code-Backup/llvm-project///build//bin/clang -m64 -c -o main.o -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP   -O3 -mavx2 -fvectorize -mllvm -disable-wyvern-pipeline -mllvm --enable-epilogue-vectorization=false -Rpass=loop-vectorize -Rpass-missed=loop-vectorize -Rpass-analysis=loop-vectorize              -DSPEC_LP64  main.c
+main.c:50:3: remark: loop not vectorized: control flow cannot be substituted for a select [-Rpass-analysis=loop-vectorize]
+                }
+                ^
+main.c:44:9: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+        LBM_performStreamCollideTRT( *srcGrid, *dstGrid );
+        ^
+main.c:39:2: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+        for( t = 1; t <= param.nTimeSteps; t++ ) {
+        ^
+Writing 'main..dot'...
+main.c:39:2: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+main.c:50:3: remark: loop not vectorized: control flow cannot be substituted for a select [-Rpass-analysis=loop-vectorize]
+                }
+                ^
+main.c:41:4: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+                        LBM_handleInOutFlow( *srcGrid );
+                        ^
+main.c:39:2: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+        for( t = 1; t <= param.nTimeSteps; t++ ) {
+        ^
+Writing 'main..dot'...
+main.c:39:2: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+/home/labuser/ssd/Code-Backup/llvm-project///build//bin/clang -m64 -c -o lbm.o -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP   -O3 -mavx2 -fvectorize -mllvm -disable-wyvern-pipeline -mllvm --enable-epilogue-vectorization=false -Rpass=loop-vectorize -Rpass-missed=loop-vectorize -Rpass-analysis=loop-vectorize              -DSPEC_LP64  lbm.c
+Writing 'LBM_initializeGrid..dot'...
+
+LV: Checking a loop in "LBM_initializeGrid" from lbm.c:58:2
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:58:2: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+        SWEEP_START( 0, 0, -2, 0, 0, SIZE_Z+2 )
+        ^
+lbm.c:58:2: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:101:9: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+                                if( fgetc( file ) != '.' ) SET_FLAG( grid, x, y, z, OBSTACLE );
+                                    ^
+lbm.c:100:4: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+Writing 'LBM_loadObstacleFile..dot'...
+lbm.c:100:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+lbm.c:123:16: remark: loop not vectorized: loop contains a switch statement [-Rpass-analysis=loop-vectorize]
+                                if( x == 0 || x == SIZE_X-1 ||
+                                           ^
+Writing 'LBM_initializeSpecialCellsForLDC..dot'...
+lbm.c:122:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+lbm.c:123:16: remark: loop not vectorized: loop contains a switch statement [-Rpass-analysis=loop-vectorize]
+                                if( x == 0 || x == SIZE_X-1 ||
+                                           ^
+Writing 'LBM_initializeSpecialCellsForLDC..dot'...
+lbm.c:122:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+Writing 'LBM_initializeSpecialCellsForLDC..dot'...
+
+LV: Checking a loop in "LBM_initializeSpecialCellsForLDC" from lbm.c:122:4
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:122:4: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:122:4: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+Writing 'LBM_initializeSpecialCellsForLDC..dot'...
+
+LV: Checking a loop in "LBM_initializeSpecialCellsForLDC" from lbm.c:122:4
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:122:4: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:122:4: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:152:16: remark: loop not vectorized: loop contains a switch statement [-Rpass-analysis=loop-vectorize]
+                                if( x == 0 || x == SIZE_X-1 ||
+                                           ^
+Writing 'LBM_initializeSpecialCellsForChannel..dot'...
+lbm.c:151:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+Writing 'LBM_initializeSpecialCellsForChannel..dot'...
+
+LV: Checking a loop in "LBM_initializeSpecialCellsForChannel" from lbm.c:151:4
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:151:4: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:151:4: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+Writing 'LBM_performStreamCollideBGK..dot'...
+
+LV: Checking a loop in "LBM_performStreamCollideBGK" from lbm.c:176:2
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:176:2: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-analysis=loop-vectorize]
+        SWEEP_START( 0, 0, 0, 0, 0, SIZE_Z )
+        ^
+Finished 2
+Finished 3
+Finished ---
+Finished 4
+lbm.c:176:2: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]
+lbm.c:501:9: remark: loop not vectorized: can't find Induction variable [-Rpass-analysis=loop-vectorize]
+        for (int count=0; count < 2; count++ ) {
+        ^
+lbm.c:501:9: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+Writing 'LBM_performStreamCollideTRT..dot'...
+
+LV: Checking a loop in "LBM_performStreamCollideTRT" from lbm.c:683:5
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:683:5: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-analysis=loop-vectorize]
+    SWEEP_START( 0, 0, 0, 0, 0, SIZE_Z )
+    ^
+Finished 2
+Finished 3
+Finished ---
+Finished 4
+lbm.c:683:5: remark: vectorized loop (vectorization width: 4, interleaved count: 1) [-Rpass=loop-vectorize]
+Writing 'LBM_handleInOutFlow..dot'...
+
+LV: Checking a loop in "LBM_handleInOutFlow" from lbm.c:827:2
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:827:2: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+        SWEEP_START( 0, 0, 0, 0, 0, 1 )
+        ^
+lbm.c:827:2: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+Writing 'LBM_handleInOutFlow..dot'...
+
+LV: Checking a loop in "LBM_handleInOutFlow" from lbm.c:888:2
+run-time check is enabled 
+run-time check is enabled 
+run-time check is enabled 
+Finish!
+
+lbm.c:888:2: remark: the cost-model indicates that vectorization is not beneficial [-Rpass-missed=loop-vectorize]
+        SWEEP_START( 0, 0, SIZE_Z-1, 0, 0, SIZE_Z )
+        ^
+lbm.c:888:2: remark: the cost-model indicates that interleaving is not beneficial [-Rpass-missed=loop-vectorize]
+lbm.c:994:2: remark: loop not vectorized: value that could not be identified as reduction is used outside the loop [-Rpass-analysis=loop-vectorize]
+        SWEEP_START( 0, 0, 0, 0, 0, SIZE_Z )
+        ^
+Writing 'LBM_showGridStatistics..dot'...
+lbm.c:994:2: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+lbm.c:1144:5: remark: loop not vectorized: control flow cannot be substituted for a select [-Rpass-analysis=loop-vectorize]
+                                } else
+                                ^
+lbm.c:1067:3: remark: loop not vectorized: call instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+                fwrite( v, sizeof( OUTPUT_PRECISION ), 1, file );
+                ^
+lbm.c:1105:4: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+Writing 'LBM_storeVelocityField..dot'...
+lbm.c:1105:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+lbm.c:1202:5: remark: loop not vectorized: control flow cannot be substituted for a select [-Rpass-analysis=loop-vectorize]
+                                }
+                                ^
+lbm.c:1168:4: remark: loop not vectorized: value that could not be identified as reduction is used outside the loop [-Rpass-analysis=loop-vectorize]
+                        for( x = 0; x < SIZE_X; x++ ) {
+                        ^
+lbm.c:1168:4: remark: loop not vectorized: instruction cannot be vectorized [-Rpass-analysis=loop-vectorize]
+Writing 'LBM_compareVelocityField..dot'...
+lbm.c:1168:4: remark: loop not vectorized [-Rpass-missed=loop-vectorize]
+/home/labuser/ssd/Code-Backup/llvm-project///build//bin/clang -m64       -O3 -mavx2 -fvectorize -mllvm -disable-wyvern-pipeline -mllvm --enable-epilogue-vectorization=false -Rpass=loop-vectorize -Rpass-missed=loop-vectorize -Rpass-analysis=loop-vectorize   -z muldefs      lbm.o main.o             -lm         -o lbm_r  
+clang-13: warning: argument unused during compilation: '-mllvm -disable-wyvern-pipeline' [-Wunused-command-line-argument]
+clang-13: warning: argument unused during compilation: '-mllvm --enable-epilogue-vectorization=false' [-Wunused-command-line-argument]

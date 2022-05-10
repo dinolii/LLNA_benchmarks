@@ -1,0 +1,118 @@
+specinvoke r4356
+ Invoked as: /home/labuser/benchmarkcode/src/bin/specinvoke -d /home/labuser/benchmarkcode/src/benchspec/CPU/519.lbm_r/run/run_peak_refrate_lbt.0001 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+timer ticks over every 1000 ns
+ Environment in effect for these runs:
+ # 1: LD_LIBRARY_PATH=/home/labuser/Downloads/gcc/lib/:/home/labuser/Downloads/gcc/lib64/:/home/labuser/rose/install/lib/:/home/labuser/boost_1_67_0/install/lib/:/usr/local/lib/:/home/labuser/Downloads/cuda/lib64/:/home/labuser/magma-2.4.0/lib/:/home/labuser/RED/lib/:/usr/lib/gcc/x86_64-linux-gnu/5/:/opt/intel/lib/intel64/:/opt/intel/mkl/lib/intel64/:/usr/local/OpenBLAS/lib/:/usr/local/cuda/lib64/:/usr/local/cuda/lib/:
+ # 2: LC_PAPER=en_US.UTF-8
+ # 3: QT_ACCESSIBILITY=1
+ # 4: CONDA_EXE=/home/labuser/miniconda3/bin/conda
+ # 5: VTE_VERSION=4205
+ # 6: LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libXpm.so.4
+ # 7: CUDADIR=/usr/local/cuda/
+ # 8: UPSTART_INSTANCE=
+ # 9: SESSION_MANAGER=local/thinkmate-x99:@/tmp/.ICE-unix/2527,unix/thinkmate-x99:/tmp/.ICE-unix/2527
+ #10: LC_TIME=en_US.UTF-8
+ #11: GPG_AGENT_INFO=/home/labuser/.gnupg/S.gpg-agent:0:1
+ #12: GNOME_KEYRING_CONTROL=
+ #13: INFOPATH=/usr/local/texlive/2016/texmf-dist/doc/info:
+ #14: XMODIFIERS=@im=fcitx
+ #15: LANGUAGE=en
+ #16: COMPIZ_BIN_PATH=/usr/bin/
+ #17: UPSTART_SESSION=unix:abstract=/com/ubuntu/upstart-session/1000/2359
+ #18: LESSOPEN=| /usr/bin/lesspipe %s
+ #19: PKG_CONFIG_PATH=/home/labuser/cairo/lib/
+ #20: OLDPWD=/home/labuser
+ #21: XDG_SESSION_TYPE=x11
+ #22: LC_CTYPE=en_US.UTF-8
+ #23: _CE_M=
+ #24: XDG_SESSION_ID=c2
+ #25: XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop:/var/lib/snapd/desktop
+ #26: no_proxy=localhost,127.0.0.0/8,::1
+ #27: XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+ #28: GTK_IM_MODULE=fcitx
+ #29: DESKTOP_SESSION=ubuntu
+ #30: XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/labuser
+ #31: COMPIZ_CONFIG_PROFILE=ubuntu
+ #32: JAVA_HOME=/usr/lib/jvm/java-7-oracle
+ #33: DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path
+ #34: CONDA_PYTHON_EXE=/home/labuser/miniconda3/bin/python
+ #35: DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+ #36: LOGNAME=labuser
+ #37: UPSTART_JOB=unity7
+ #38: SUITEROOT=/home/labuser/Downloads/SuiteSparse/
+ #39: XDG_VTNR=7
+ #40: QT_IM_MODULE=fcitx
+ #41: _=/home/labuser/benchmarkcode/src/bin/runcpu
+ #42: XDG_SEAT=seat0
+ #43: XAUTHORITY=/home/labuser/.Xauthority
+ #44: SPECPERLLIB=/home/labuser/benchmarkcode/src/bin/lib:/home/labuser/benchmarkcode/src/bin
+ #45: SPARK_HOME=/home/labuser/Documents/spark
+ #46: QT4_IM_MODULE=fcitx
+ #47: XDG_CURRENT_DESKTOP=Unity
+ #48: BOOST_ROOT=/home/labuser/boost_1_67_0/install/
+ #49: XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+ #50: PATH=/home/labuser/benchmarkcode/src/bin:/home/labuser/miniconda3/condabin:/usr/local/bin/:/usr/local/cuda/bin/:/opt/intel/oneapi/vtune/2021.1.1/bin64/:/home/labuser/llvm-project/build/bin/:/home/labuser/matlab/bin/:/usr/local/texlive/2016/bin/x86_64-linux/:/home/labuser/Downloads/VSCode-linux-x64:/home/labuser/mpich-3.2/bin/:/home/labuser/Documents/pintos/src/utils:/home/labuser/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/labuser/Documents/sublime:/usr/lib/jvm/java-7-oracle/bin:/home/labuser/Documents/scala/bin:/home/labuser/Documents/spark/bin:/home/labuser/Documents/spark/sbin:/home/labuser/Documents/hadoop/bin:/home/labuser/Documents/hadoop/sbin:/home/labuser/Matlab/bin
+ #51: IM_CONFIG_PHASE=1
+ #52: OPENBLASROOT=/usr/local/OpenBLAS/
+ #53: GTK2_MODULES=overlay-scrollbar
+ #54: DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-IZjjEGbUtA
+ #55: SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+ #56: SESSIONTYPE=gnome-session
+ #57: LC_MEASUREMENT=en_US.UTF-8
+ #58: J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+ #59: SPEC=/home/labuser/benchmarkcode/src
+ #60: SPECDB_PWD=/home/labuser/benchmarkcode/src
+ #61: QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+ #62: JOB=unity-settings-daemon
+ #63: CLUTTER_IM_MODULE=xim
+ #64: PWD=/home/labuser/benchmarkcode/src
+ #65: METISROOT=/usr/local/
+ #66: LIBC_FATAL_STDERR_=1
+ #67: XDG_SESSION_DESKTOP=ubuntu
+ #68: NO_PROXY=localhost,127.0.0.0/8,::1
+ #69: LC_NUMERIC=en_US.UTF-8
+ #70: GDMSESSION=ubuntu
+ #71: XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg
+ #72: USER=labuser
+ #73: GNOME_KEYRING_PID=
+ #74: TERM=xterm-256color
+ #75: LESSCLOSE=/usr/bin/lesspipe %s %s
+ #76: SHELL=/bin/bash
+ #77: LC_ALL=C
+ #78: LC_NAME=en_US.UTF-8
+ #79: MANPATH=/usr/local/texlive/2016/texmf-dist/doc/man/:
+ #80: LC_MONETARY=en_US.UTF-8
+ #81: SESSION=ubuntu
+ #82: UPSTART_EVENTS=xsession started
+ #83: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+ #84: GTK_MODULES=gail:atk-bridge:unity-gtk-module
+ #85: CONDA_SHLVL=0
+ #86: XDG_MENU_PREFIX=gnome-
+ #87: WINDOWID=65016003
+ #88: LC_LANG=C
+ #89: HADOOP_HOME=/home/labuser/Documents/hadoop
+ #90: MKLROOT=/opt/intel/mkl/
+ #91: XDG_RUNTIME_DIR=/run/user/1000
+ #92: QT_QPA_PLATFORMTHEME=appmenu-qt5
+ #93: SCALA_HOME=/home/labuser/Documents/scala
+ #94: DISPLAY=:0
+ #95: PAPERSIZE=letter
+ #96: MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path
+ #97: LC_IDENTIFICATION=en_US.UTF-8
+ #98: LANG=en_US.UTF-8
+ #99: GDM_LANG=en
+ #100: INSTANCE=
+ #101: LC_TELEPHONE=en_US.UTF-8
+ #102: SHLVL=1
+ #103: LC_ADDRESS=en_US.UTF-8
+ #104: GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+ #105: OPENBLASDIR=/usr/local/OpenBLAS/
+ #106: HOME=/home/labuser
+ #107: J2SDKDIR=/usr/lib/jvm/java-8-oracle
+ #108: _CE_CONDA=
+ #109: OMP_NUM_THREADS=1
+ #110: OMP_THREAD_LIMIT=1
+running commands in speccmds.cmd 1 times
+runs started at		1649628212, 462417000, Sun Apr 10 18:03:32 2022
+run 1 started at	1649628212, 462441000, Sun Apr 10 18:03:32 2022
+child started: 0,	1649628212, 462449000, pid=8436, '../run_peak_refrate_lbt.0001/lbm_r_peak.lbt 3000 reference.dat 0 0 100_100_130_ldc.of'

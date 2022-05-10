@@ -1,0 +1,5 @@
+build_base_mytest-m64.0000 dir=/home/labuser/benchmarkcode/src/benchspec/CPU/519.lbm_r/build/build_base_mytest-m64.0000 label=mytest-m64 lock=0 tune=base type=build username=labuser
+build_peak_lbt.0000 dir=/home/labuser/benchmarkcode/src/benchspec/CPU/519.lbm_r/build/build_peak_lbt.0000 label=lbt lock=1 tune=peak type=build username=labuser
+build_peak_mytest-m64.0000 dir=/home/labuser/benchmarkcode/src/benchspec/CPU/519.lbm_r/build/build_peak_mytest-m64.0000 label=mytest-m64 lock=0 tune=peak type=build username=labuser
+build_peak_none.0000 dir=/home/labuser/benchmarkcode/src/benchspec/CPU/519.lbm_r/build/build_peak_none.0000 label=none lock=0 tune=peak type=build username=labuser
+__END__
